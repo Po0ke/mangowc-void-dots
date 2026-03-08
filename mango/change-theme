@@ -1,0 +1,8 @@
+#!/bin/bash
+wal -R
+swaync-client -rs
+pkill waybar
+nohup waybar > /dev/null 2>&1 &
+pkill -USR1 cava
+
+# Any other apps like Zen or Rofi will pick it up automatically

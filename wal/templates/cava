@@ -1,0 +1,13 @@
+[color]
+# Use Pywal colors for the bars
+gradient = 1
+
+# Color 1 is the bottom of the bars, Color 2 is the top
+gradient_color_1 = '{color1}'
+gradient_color_2 = '{color2}'
+
+[display]
+# Optional: set the character for a smoother look
+ascii_max_range = 7
+bar_width = 2
+bar_spacing = 1

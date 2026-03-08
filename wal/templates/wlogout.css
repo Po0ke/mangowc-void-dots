@@ -1,0 +1,53 @@
+/* Pywal Colors */
+@define-color bg rgba({background.rgb}, 0.7);
+@define-color fg {foreground};
+@define-color accent {color2};
+
+* {{
+    font-family: "JetBrainsMono Nerd Font";
+    /* Smooth scaling transition */
+    transition: all 0.3s cubic-bezier(.55, .05, .22, .99);
+}}
+
+window {{
+    background-color: @bg;
+}}
+
+button {{
+    color: @fg;
+    /* Semi-transparent button by default */
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    margin: 30px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    
+    font-size: 26px;
+    font-weight: 500;
+    padding-top: 130px;
+
+}}
+
+/* THE ZOOM EFFECT */
+button:hover {{
+    /* Instead of a solid color, we make it more transparent/clear */
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Make the border glow with the Pywal accent color */
+    border: 2px solid @accent;
+    /* Increase the size of the button */
+    margin: 15px; 
+    /* Slightly brighten the text/icon */
+    color: #ffffff;
+
+}}
+
+/* Link the specific icons */
+#lock {{ background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png")); }}
+#logout {{ background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png")); }}
+#suspend {{ background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png")); }}
+#hibernate {{ background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png")); }}
+#shutdown {{ background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png")); }}
+#reboot {{ background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png")); }}

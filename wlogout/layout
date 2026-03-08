@@ -1,0 +1,36 @@
+{
+    "label" : "lock",
+    "action" : "hyprlock",
+    "text" : " Lock ",
+    "keybind" : "l"
+}
+{
+    "label" : "hibernate",
+    "action" : "loginctl hibernate",
+    "text" : " Hibernate ",
+    "keybind" : "h"
+}
+{
+    "label" : "logout",
+    "action" : "pkill mango",
+    "text" : " Logout ",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "sudo shutdown -h now",
+    "text" : " Shutdown ",
+    "keybind" : "s"
+}
+{
+    "label" : "suspend",
+    "action" : "/home/luke/.local/bin/suspend-safe.sh"
+    "text" : " Suspend ",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "sudo reboot",
+    "text" : " Reboot ",
+    "keybind" : "r"
+}

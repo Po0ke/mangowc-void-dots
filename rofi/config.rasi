@@ -1,0 +1,2 @@
+@theme "/dev/null"
+@import "~/.cache/wal/colors-rofi-dark.rasi"

@@ -1,0 +1,41 @@
+@define-color bg rgba({background.rgb}, 0.7);
+@define-color fg {foreground};
+@define-color accent {color2};
+
+* {{
+    border: none;
+    border-radius: 0;
+    /* Force JetBrainsMono Nerd Font */
+    font-family: "JetBrainsMono Nerd Font", "monospace";
+    font-size: 14px;
+    min-height: 0;
+}}
+
+window#waybar {{
+    background: @bg;
+    color: @fg;
+    border-bottom: 2px solid @accent;
+}}
+
+#custom-launcher {{
+    color: @accent;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}}
+
+#clock, #pulseaudio, #battery {{
+    padding: 0 10px;
+}}
+
+#clock {{
+    font-weight: bold;
+}}
+
+#custom-power {{
+    color: @accent;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 20px; /* Increase this to move the icon LEFT away from the edge */
+    margin-right: 0px;    /* Ensure this is 0 */
+}}

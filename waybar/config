@@ -1,0 +1,48 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 4,
+    "modules-left": ["custom/launcher"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "battery"],
+
+    "custom/launcher": {
+        "format": "󱓞", 
+        "on-click": "rofi -show drun",
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "   {:%I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "  ",
+        "format-icons": {
+            "default": ["󰝟 ", "󰕿 ", "󰕿 ", "󰕿 ", "󰕿 ", "󰖀 ", "󰖀 ", "󰖀 ", "󰖀 ", "󰖀 ", "󰖀 ", "󰕾 ", "󰕾 ", "󰕾 "]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+    },
+
+	"modules-right": ["pulseaudio", "battery", "custom/power"],
+
+	"custom/power": {
+    	"format": "⏻",
+    	"on-click": "wlogout",
+    	"tooltip": false
+
+	}
+
+}

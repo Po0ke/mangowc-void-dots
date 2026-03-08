@@ -1,0 +1,75 @@
+* {{
+    /* Using your Pywal colors */
+    bg: rgba({background.rgb}, 0.7);
+    accent: {color2};
+    fg: #ffffff;
+    
+    background-color: transparent;
+    text-color:       @fg;
+    font:            "JetBrainsMono Nerd Font 12";
+}}
+
+window {{
+    background-color: @bg;
+    border:           2px;
+    border-color:     @accent;
+    border-radius:    12px;
+    width:            600px;
+    padding:          30px;
+}}
+
+mainbox {{
+    children: [ inputbar, listview ];
+    spacing: 20px;
+}}
+
+inputbar {{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius:    8px;
+    padding:          12px;
+    children:         [ prompt, entry ];
+}}
+
+prompt {{
+    text-color: @accent;
+    margin: 0 10px 0 0;
+}}
+
+entry {{
+    placeholder: "Search...";
+    placeholder-color: rgba(255, 255, 255, 0.3);
+}}
+
+listview {{
+    fixed-height: 0;
+    border:       0px;
+    scrollbar:    false;
+    lines:        8;
+    spacing:      5px;
+}}
+
+element {{
+    padding:          8px 12px;
+    border-radius:    6px;
+}}
+
+element normal.normal, element alternate.normal {{
+    background-color: transparent;
+    text-color:       @fg;
+}}
+
+element selected.normal, element selected.alternate {{
+    background-color: @accent;
+    text-color:       #000000;
+}}
+
+element-text, element-icon {{
+    background-color: inherit;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}}
+
+element-icon {{
+    size: 24px;
+    margin: 0 10px 0 0;
+}}

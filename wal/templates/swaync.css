@@ -1,0 +1,40 @@
+@define-color bg rgba({background.rgb}, 0.7);
+@define-color fg {foreground};
+@define-color accent {color2};
+
+* {{
+    font-family: "JetBrainsMono Nerd Font";
+    transition: 200ms;
+}}
+
+/* The notification bubble */
+.notification {{
+    background: @bg;
+    color: @fg;
+    border: 1px solid @accent;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 10px;
+}}
+
+/* The Volume Slider (Progress Bar) */
+progress {{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 8px;
+}}
+
+progress highlight {{
+    background: @accent;
+    border-radius: 10px;
+}}
+
+.notification-content {{
+    margin: 5px;
+}}
+
+.summary {{
+    font-weight: bold;
+    color: @accent;
+}}

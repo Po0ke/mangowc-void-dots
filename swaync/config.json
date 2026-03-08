@@ -1,0 +1,12 @@
+{
+  "positionX": "right",
+  "positionY": "bottom",
+  "layer": "overlay",
+  "control-center-margin-top": 0,
+  "control-center-margin-bottom": 10,
+  "notification-icon-size": 64,
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+  "timeout": 3,
+  "transition-time": 200
+}
