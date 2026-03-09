@@ -15,6 +15,8 @@ It was designed to be used on void linux, but can work on other systemd-based di
   <summary>How to use "wallpaper-set"</summary>
 
   The use of "wallpaper-set" requires only a wallpaper for pywal to grab the colors of. 
+
+  Utiliy Use: `[Command] [Wallpaper Directory]`
   
   _NOTE: Some wallpapers that have very saturated colors may have worse results than others when put through pywal._
 </details>
