@@ -23,3 +23,5 @@ swww img "$SELECTED_WALL" --transition-type grow --transition-pos center --trans
 # 5. Generate and apply color palette with pywal
 # -i specifies the image; -n skips setting the wallpaper via wal (since swww handles it)
 wal -i "$SELECTED_WALL" && .config/mango/change-theme
+
+echo "THEME SELECTED SUCCESSFULLY"
