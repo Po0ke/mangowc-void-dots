@@ -11,9 +11,10 @@ https://github.com/user-attachments/assets/ff3d416c-f858-4bcc-8ff8-7fb8b364e9b3
 
 1. Move all folders into your **$HOME/.config**
 2. Make all the files in ".local/bin" executable, then place them in your **$HOME/.local/bin/** directory
-3. Make sure you also have a foot directory in ~/.config
-4. **AFTER** using the wallpaper-set tool, use command `ln -sf ~/.cache/wal/waybar.css ~/.config/waybar/style.css && ln -sf ~/.cache/wal/foot.ini ~/.config/foot/ && ln -sf ~/.cache/wal/swaync.css ~/.config/swaync/style.css && ln -sf ~/.cache/wal/wlogout.css ~/.config/wlogout/style.css`
-5. Enjoy (:
+3. **IMPORTANT:** Also make the file "_~/.config/mango/change-theme_" executable!
+4. Make sure you also have a foot directory in ~/.config
+5. **AFTER** using the wallpaper-set tool, use command `ln -sf ~/.cache/wal/waybar.css ~/.config/waybar/style.css && ln -sf ~/.cache/wal/foot.ini ~/.config/foot/ && ln -sf ~/.cache/wal/swaync.css ~/.config/swaync/style.css && ln -sf ~/.cache/wal/wlogout.css ~/.config/wlogout/style.css`
+6. Enjoy (:
 
 **USEFUL INFO**
 
@@ -39,7 +40,7 @@ https://github.com/user-attachments/assets/ff3d416c-f858-4bcc-8ff8-7fb8b364e9b3
 <details>
   <summary>How to use "wallpaper-set"</summary>
 
-  The use of "wallpaper-set" requires only a wallpaper for pywal to grab the colors of. 
+  The "wallpaper-set" tool basically just switches the wallpaper with `swww`, and grabs the colors     using the `wal`. Then, pywal automatically changes the colors of waybar, foot, etc., so it matches   the wallpaper.
 
   Utiliy Use: `[Command] [Wallpaper Directory]`
   
