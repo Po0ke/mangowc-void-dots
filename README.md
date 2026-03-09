@@ -1,6 +1,12 @@
 This is a Mangowc rice that I made. It utilizes Pywal and the "wallpaper-set" bash script/utility.
 It was designed to be used on void linux, but can work on other systemd-based distro with some tinkering.
 
+Showcase:
+
+https://github.com/user-attachments/assets/ff3d416c-f858-4bcc-8ff8-7fb8b364e9b3
+
+
+
 **HOW TO INSTALL**
 
 1. Move all folders into your **$HOME/.config**
