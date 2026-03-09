@@ -22,6 +22,8 @@ It was designed to be used on void linux, but can work on other systemd-based di
 * Wlogout
 * Hyprlock
 * Thunar
+* Wl-clipboard (for a clipboard)
+* Grim and Slurp (for screenshot)
 * Pipewire
 * JetBrainsMono Nerd Font
   
