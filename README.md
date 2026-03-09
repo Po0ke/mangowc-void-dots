@@ -12,6 +12,23 @@ It was designed to be used on void linux, but can work on other systemd-based di
 **USEFUL INFO**
 
 <details>
+  <summary>Dependencies</summary>
+
+* MangoWC
+* Swww
+* Pywal
+* Waybar
+* Rofi
+* Wlogout
+* Hyprlock
+* Thunar
+* Pipewire
+* JetBrainsMono Nerd Font
+  
+
+</details>
+
+<details>
   <summary>How to use "wallpaper-set"</summary>
 
   The use of "wallpaper-set" requires only a wallpaper for pywal to grab the colors of. 
