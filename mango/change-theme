@@ -1,5 +1,5 @@
 #!/bin/bash
-wal -R
+wal -n -R
 swaync-client -rs
 pkill waybar
 nohup waybar > /dev/null 2>&1 &
